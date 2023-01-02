@@ -37,7 +37,7 @@
                 black 80px
                 );
         }*/
-        .ball {
+        /*.ball {
             width: 40px;
             height: 40px;
             margin: 50 auto;
@@ -55,6 +55,28 @@
         #ball2 {
             left: 65%;
             transform: scale(2);
+        }*/
+        #ball {
+            width: 70px;
+            height: 70px;
+            margin: 50px auto;
+            position: fixed;
+            left: 20%;
+            border-radius: 50%;
+            background: linear-gradient(
+            35deg,
+            #ccffff,
+            #ffcccc
+            );
+            animation-name: fade;
+            animation-duration: 3s;
+        }
+
+        @keyframes fade {
+            50% {
+            left: 60%;
+            opacity: 0.1;
+            }
         }
     </style>
         <h1>On Being Well-Positioned</h1>
@@ -69,7 +91,8 @@
             </form>
         </section>
         <div></div>
-        <div class="ball" id= "ball1"></div>
-        <div class="ball" id= "ball2"></div>
+        <!--<div class="ball" id= "ball1"></div>
+        <div class="ball" id= "ball2"></div>-->
+        <div id="ball"></div>
 </body>
 </html>
